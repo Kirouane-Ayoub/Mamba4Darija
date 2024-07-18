@@ -24,3 +24,13 @@ python train.py --pre_train True --n_epochs 50
 ```
 python train.py --finetune True --pretrained_model_name state-spaces/mamba-370m --n_epochs 200
 ```
+## Inference
+
+##### Running the Inference Script
+
+Use the following command to generate text:
+```bash
+python inference.py --prompt "وحد نهار" --model_path "model_final.pt" --max_length 30 --num_return_sequences 5
+```
+
+This will generate and print multiple sequences of text based on the provided prompt.
